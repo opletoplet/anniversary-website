@@ -32,20 +32,3 @@ function toggleMusic() {
 function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-    let slides = document.querySelectorAll(".slideshow-container img");
-    let index = 0;
-
-    function showSlide() {
-        slides.forEach((slide, i) => {
-            slide.classList.remove("active"); // Hilangin semua active
-        });
-
-        slides[index].classList.add("active"); // Tampilkan gambar aktif
-        index = (index + 1) % slides.length; // Pindah ke gambar berikutnya
-    }
-
-    showSlide(); // Tampilkan slide pertama
-    setInterval(showSlide, 3000); // Ganti slide setiap 3 detik
-});
