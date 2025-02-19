@@ -9,7 +9,7 @@ body {
     font-family: Helvetica, sans-serif;
     background: url('pixel-background.jpg') repeat;
     background-size: cover;
-    color: black;
+    color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -18,14 +18,24 @@ body {
     height: 100vh
 
 .container {
+    position: relative;
     margin-top: 50px;
 }
 
 .slideshow img {
     width: 300px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 20px 0;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Efek fade */
+}
+
+/* Tampilkan gambar aktif */
+.slideshow-container img.active {
+    opacity: 1
 }
 
 button {
