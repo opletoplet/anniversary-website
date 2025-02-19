@@ -46,11 +46,19 @@ h1 {
 }
 
 #slideshow {
-    width: 300px; /* Atur ukuran gambar */
-    height: auto;
+    width: 250px;  /* Atur lebar sesuai kebutuhan */
+    height: 250px; /* Bisa diatur sesuai aspect ratio */
+    object-fit: cover; /* Biar tetap rapi */
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     transition: opacity 0.5s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    #slideshow {
+        width: 180px; /* Ukuran lebih kecil di HP */
+        height: 180px;
+    }
     
 /* Gaya tombol */
 button {
