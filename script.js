@@ -1,7 +1,7 @@
 // 🎵 Auto Play Musik dengan Tombol
 function playMusic() {
-    let musik = document.getElementById("musik");
-    musik.play();
+    let lagu.mp3 = document.getElementById("lagu.mp3");
+    lagu.mp3.play();
 }
 
 // 🎨 Ganti Mode Gelap/Terang dengan Animasi
@@ -10,7 +10,7 @@ function toggleDarkMode() {
 }
 
 // 📸 Slideshow Foto Otomatis dengan Fade Effect
-let images = ["images/foto1.jpg", "images/foto2.jpg", "images/foto3.jpg"];
+let images = ["foto1.jpg", "foto2.jpg", "foto3.jpg"];
 let index = 0;
 function changeImage() {
     let imgElement = document.getElementById("slideshow");
