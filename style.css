@@ -5,6 +5,7 @@
 }
 
 body {
+    font-family: helvetica, sans-serif;
     background: url('pixel-background.jpg') repeat; /* Background pixel tetap ada */
     background-size: cover;
     display: flex;
@@ -23,7 +24,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.5); /* Opacity 50% */
+    background: rgba(255, 255, 255, 0.3); /* Opacity 50% */
     z-index: -1;
 }
 
