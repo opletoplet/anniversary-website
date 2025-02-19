@@ -23,15 +23,6 @@ function changeImage() {
 }
 setInterval(changeImage, 3000);
 
-// ✍️ Efek Ketikan di Ucapan Anniversary
-let text = "Hey sweetheart!!! Happy 10 month yaa... 💕";
-let indexText = 0;
-function typeWriter() {
-    if (indexText < text.length) {
-        document.getElementById("ucapan").innerHTML += text.charAt(indexText);
-        indexText++;
-        setTimeout(typeWriter, 100);
-    }
 }
 window.onload = () => {
     typeWriter();
