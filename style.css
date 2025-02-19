@@ -18,6 +18,7 @@ body {
     height: 100vh
 
 .container {
+    position: relative;
     margin-top: 50px;
 }
 
@@ -48,14 +49,4 @@ button {
 .dark-mode {
     background-color: #333;
     color: white;
-}
-
-@keyframes bounce {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-5px); }
-}
-
-.image-container img:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
 }
