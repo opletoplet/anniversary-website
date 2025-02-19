@@ -1,0 +1,83 @@
+/* Gaya umum */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    background: url('background.png') repeat;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s, color 0.5s;
+}
+
+/* Kontainer utama */
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Teks judul */
+h1 {
+    font-size: 28px;
+    color: #d1005d;
+}
+
+/* Teks ucapan */
+#ucapan {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Slideshow foto */
+.slideshow img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    border: 4px solid #d1005d;
+}
+
+/* Gaya tombol */
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+    transition: 0.3s;
+    background-color: #d1005d;
+    color: white;
+}
+
+button:hover {
+    background-color: #b80050;
+}
+
+/* Mode Gelap */
+.dark-mode {
+    background: url('background.png') repeat;
+    background-size: cover;
+    color: white;
+}
+
+.dark-mode .container {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.dark-mode h1 {
+    color: #ff66a3;
+}
+
+.dark-mode button {
+    background-color: #ff66a3;
+}
+
+.dark-mode button:hover {
+    background-color: #e05590;
+}
