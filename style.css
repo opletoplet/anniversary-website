@@ -74,28 +74,6 @@ button:hover {
     background-color: #b80050;
 }
 
-/* Mode Gelap */
-.dark-mode {
-    background: url('background.png') repeat;
-    background-size: cover;
-    color: white;
-}
-
-.dark-mode .container {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.dark-mode h1 {
-    color: #ff66a3;
-}
-
-.dark-mode button {
-    background-color: #ff66a3;
-}
-
-.dark-mode button:hover {
-    background-color: #e05590;
-}
 
 body {
     background: url('pixel-background.jpg') repeat;
