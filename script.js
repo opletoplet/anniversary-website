@@ -1,22 +1,20 @@
 // 📸 Slideshow Foto Otomatis dengan Fade Effect
-let images = ["foto1.jpg", "foto2.jpg", "foto3.jpg"];
+let images = ["images/foto1.jpg", "images/foto2.jpg", "images/foto3.jpg"];
 let index = 0;
+
 function changeImage() {
     let imgElement = document.getElementById("slideshow");
-    imgElement.classList.add("fade-out");
+    imgElement.classList.add("fade-out"); // Efek transisi fade
+
     setTimeout(() => {
+        index = (index + 1) % images.length;
         imgElement.src = images[index];
         imgElement.classList.remove("fade-out");
-        index = (index + 1) % images.length;
-    }, 500);
+    }, 500); // Waktu transisi
 }
-setInterval(changeImage, 3000);
 
-}
-window.onload = () => {
-    typeWriter();
-    createFloatingHearts();
-};
+// Ganti gambar setiap 3 detik
+setInterval(changeImage, 3000);
 
 // ❤️ Efek Hati Melayang
 function createFloatingHearts() {
