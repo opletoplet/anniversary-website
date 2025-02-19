@@ -10,37 +10,52 @@
     100% { transform: translateY(-100vh); opacity: 0; }
 
 }
+
+/* Reset margin & padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Styling umum */
 body {
     font-family: Helvetica, sans-serif;
-    background: url('pixel-background.png') repeat;
+    background: url('images/background.png') repeat;
     background-size: cover;
     color: black;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column; /* Biar elemen tetap berurutan */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Tengah secara vertikal */
 }
 
 /* Styling slideshow */
 .slideshow-container {
-    width: 100%;
+    max-width: 200px; /* Ukuran fix */
     text-align: center;
-    margin-top: 20px;
 }
 
 #slideshow {
-    width: 150px;  /* Ukuran kecil */
-    height: 150px;
-    object-fit: cover; /* Biar proporsional */
+    width: 100%;  
+    height: auto;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     transition: opacity 0.5s ease-in-out;
 }
 
+/* Styling teks */
+h1 {
+    font-size: 20px;
+    margin-bottom: 15px; /* Biar ada jarak dari slideshow */
+}
+
 /* Ukuran lebih kecil di HP */
 @media (max-width: 600px) {
-    #slideshow {
-        width: 120px;
-        height: 120px;
+    .slideshow-container {
+        max-width: 150px; /* Lebih kecil di HP */
     }
 }
