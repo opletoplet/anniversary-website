@@ -1,12 +1,3 @@
-/* Efek Fade di Slideshow */
-#slideshow {
-    transition: opacity 0.5s ease-in-out;
-}
-.fade-out {
-    opacity: 0;
-}
-
-
 /* Efek Hati Melayang */
 .heart {
     position: fixed;
@@ -48,14 +39,19 @@ h1 {
 
 
 /* Slideshow foto */
-.slideshow img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    margin: 20px 0;
-    border: 4px solid #000000;
+.slideshow-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
 }
 
+#slideshow {
+    width: 300px; /* Atur ukuran gambar */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease-in-out;
+    
 /* Gaya tombol */
 button {
     padding: 10px 15px;
@@ -74,7 +70,7 @@ button:hover {
     background-color: #b80050;
 }
 
-
+/* Background*/
 body {
     background: url('pixel-background.jpg') repeat;
     background-size: cover;
