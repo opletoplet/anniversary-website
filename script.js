@@ -1,7 +1,7 @@
 // 🎵 Auto Play Musik dengan Tombol
 function playMusic() {
-    let lagu.mp3 = document.getElementById("lagu.mp3");
-    lagu.mp3.play();
+    let musik = document.getElementById("lagu.mp3");
+    musik.play();
 }
 
 // 🎨 Ganti Mode Gelap/Terang dengan Animasi
