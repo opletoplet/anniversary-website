@@ -4,38 +4,24 @@
     box-sizing: border-box;
 }
 
-/* Styling umum */
 body {
-    font-family: Helvetica, sans-serif;
-    background: url('pixel-background.jpg') repeat;
+    font-family: helvetica, sans-serif;
+    text-align: center;
+    background: url('pixel-background.jpg')repeat;
     background-size: cover;
     color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh
+    transition: background 0.5s, color 0.5s;
+}
 
 .container {
-    position: relative;
     margin-top: 50px;
 }
 
 .slideshow img {
     width: 300px;
     height: auto;
-    border-radius: 15px;
+    border-radius: 10px;
     margin: 20px 0;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    opacity: 0;
-    transition: opacity 1s ease-in-out; /* Efek fade */
-}
-
-/* Tampilkan gambar aktif */
-.slideshow-container img.active {
-    opacity: 1
 }
 
 button {
