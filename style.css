@@ -21,7 +21,7 @@
 /* Styling umum */
 body {
     font-family: Helvetica, sans-serif;
-    background: url('images/background.png') repeat;
+    background: url('pixel-background.png') repeat;
     background-size: cover;
     color: black;
     text-align: center;
