@@ -6,13 +6,6 @@
     opacity: 0;
 }
 
-/* Efek Ketikan */
-#ucapan {
-    font-size: 20px;
-    font-weight: bold;
-    color: #56021F;
-    text-shadow: 2px 2px 10px rgba(209, 0, 93, 0.5);
-}
 
 /* Efek Hati Melayang */
 .heart {
@@ -53,11 +46,6 @@ h1 {
     color: #000000;
 }
 
-/* Teks ucapan */
-#ucapan {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
 
 /* Slideshow foto */
 .slideshow img {
