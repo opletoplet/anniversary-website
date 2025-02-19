@@ -32,24 +32,3 @@ function toggleMusic() {
 function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-    const loveContainer = document.createElement("div");
-    loveContainer.classList.add("love-container");
-    document.body.appendChild(loveContainer);
-
-    function createHeart() {
-        const heart = document.createElement("div");
-        heart.classList.add("heart");
-        heart.innerHTML = "❤️";
-        heart.style.left = Math.random() * 100 + "vw"; // Random posisi
-        heart.style.animationDuration = Math.random() * 2 + 2 + "s"; // Random durasi
-        loveContainer.appendChild(heart);
-
-        setTimeout(() => {
-            heart.remove(); // Hapus setelah animasi selesai
-        }, 3000);
-    }
-
-    setInterval(createHeart, 500); // Munculin heart tiap 0.5 detik
-}
