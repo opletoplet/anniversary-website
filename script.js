@@ -1,18 +1,3 @@
-// 🎵 Auto Play Musik dengan Tombol
-function playMusic() {
-    let musik = document.getElementById("musik");
-    musik.volume = 2.0; // Atur volume biar maksimal
-    musik.play().catch(error => {
-        console.log("Auto-play tidak diizinkan, user harus klik tombol");
-    });
-}
-}
-
-// 🎨 Ganti Mode Gelap/Terang dengan Animasi
-function toggleDarkMode() {
-    document.body.classList.toggle("dark-mode");
-}
-
 // 📸 Slideshow Foto Otomatis dengan Fade Effect
 let images = ["foto1.jpg", "foto2.jpg", "foto3.jpg"];
 let index = 0;
