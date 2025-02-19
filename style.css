@@ -11,6 +11,11 @@ body {
     background-size: cover;
     color: white;
     transition: background 0.5s, color 0.5s;
+    text-shadow:  
+        -2px -2px 0px black,  
+         2px -2px 0px black,  
+        -2px  2px 0px black,  
+         2px  2px 0px black
 }
 
 .container {
@@ -35,4 +40,38 @@ button {
 .dark-mode {
     background-color: #333;
     color: white;
+}
+
+/* Container buat love animation */
+.love-container {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Biar nggak ganggu klik */
+    overflow: hidden;
+}
+
+/* Styling untuk love */
+.heart {
+    position: absolute;
+    bottom: -50px;
+    font-size: 24px; /* Ukuran heart */
+    color: red;
+    opacity: 0.8;
+    animation: floatUp 3s linear infinite;
+}
+
+/* Animasi love naik ke atas */
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) scale(1.5);
+        opacity: 0;
+    }
 }
